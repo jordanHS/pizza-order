@@ -12,46 +12,53 @@
       <div class="well">
         <h1>Welcome to Pietro's Pizza!</h1>
         </div>
-        <p>Fill out the form below to determine cost of your pizza</p>
+        <p>Build your own pizza!</p>
         <h2>What size of pizza would you like?</h2>
-      <form>
+      <form id="size">
           <div class="radio">
             <label>
               <input type="radio" name="size" value="small" checked>
-              Small
+              Small $10
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="medium">
-              Medium
+              Medium 12$
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="large">
-              Large
+              Large $15
             </label>
         </div>
+      </form>
         <div class="radio">
           <label>
             <input type="radio" name="size" value="extra-large">
-            Xtra Large
+            Xtra Large $20
           </label>
         </div>
-      </form>
-        <h2>Pick your toppings</h2>
-          <form id="toppings">
-            <div class="form-group">
-              <input type="checkbox" name="topping" value="cheese">Cheese<br>
-              <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-              <input type="checkbox" name="topping" value="sausage">Sausage<br>
-              <input type="checkbox" name="topping" value="ham">Ham<br>
-              <input type="checkbox" name="topping" value="bacon">Bacon<br>
-              <input type="checkbox" name="topping" value="olives">Olives<br>
-              <input type="checkbox" name="topping" value="onion">Onion<br>
-              <input type="checkbox" name="topping" value="mushroom">Mushrrom<br>
-              <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
+        <button type="submit" class="btn btn-info">Next</button>
+       <div class="form-two">
+         <h2>Pick your toppings</h2>
+         <form id="toppings">
+           <div class="form-group">
+             <input type="checkbox" name="topping" value="cheese">Cheese<br>
+             <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+             <input type="checkbox" name="topping" value="sausage">Sausage<br>
+             <input type="checkbox" name="topping" value="ham">Ham<br>
+             <input type="checkbox" name="topping" value="bacon">Bacon<br>
+             <input type="checkbox" name="topping" value="olives">Olives<br>
+             <input type="checkbox" name="topping" value="onion">Onion<br>
+             <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
+             <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
+            </div>
+            <button type="submit" class="btn btn-success">Order!</button>
+
+        </form>
+        </div>
     </div>
   </body>
 </html>
