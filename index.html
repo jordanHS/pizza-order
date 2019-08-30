@@ -13,24 +13,25 @@
         <h1>Welcome to Pietro's Pizza!</h1>
         </div>
         <p>Build your own pizza!</p>
+      <div class="form-one">
         <h2>What size of pizza would you like?</h2>
       <form id="size">
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="small" checked>
-              Small $10
+              <input type="radio" name="size" value="small">
+              Small
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="medium">
-              Medium 12$
+              Medium
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="large">
-              Large $15
+              Large
             </label>
         </div>
       </form>
@@ -41,6 +42,7 @@
           </label>
         </div>
         <button type="submit" class="btn btn-info">Next</button>
+        </div>
        <div class="form-two">
          <h2>Pick your toppings</h2>
          <form id="toppings">
@@ -55,9 +57,11 @@
              <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
              <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
             </div>
-            <button type="submit" class="btn btn-success">Order!</button>
 
-        </form>
+            <button type="submit" class="btn btn-success">Order!</button>
+          </form>
+          <div id="pizza-cost">
+
         </div>
     </div>
   </body>

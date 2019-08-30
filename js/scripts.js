@@ -1,6 +1,18 @@
-function Pizza (size, toppings) {
+function Pizza (size, toppings, toppingCost) {
   this.size = size;
   this.toppings = toppings;
+
+}
+
+Size.prototype.cost = function() {
+  if (size = "small") {
+    return = "$10";
+  else  (size = "medium") {
+    return = "$12";
+} else (size = "large") {
+  return = "$15";
+} else (size = "extra-large") {
+  return = "$20"
 }
 
 
@@ -8,10 +20,10 @@ function Pizza (size, toppings) {
 
 
 $(document).ready(function() {
-  $("form#size").submit(function(event) {
-  var Size = $("input#size").val();
+  $(".form-one").submit(function(event) {
+    $(".form-one").hide();
 })
-$("form#toppings").submit(function(event) {
-    var Toppings = $("input#toppings").val();
+  $(".form-two").submit(function(eve) {
+    $(".form-two").show();
 })
 });

@@ -5,3 +5,12 @@ h1 {
 .form-two {
   display: none;
 }
+
+body {
+  background-color: #caedec
+}
+
+p {
+  font-size: 20px;
+text-align: center;
+}
