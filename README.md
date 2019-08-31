@@ -13,7 +13,7 @@ This forn should calculate the cost of pizza based on the size & number of toppi
 * Click HTML file to open in browser.
 * Select pizza size
 * choose up to two toppings
-* Submit your toppings
+* Submit the form to get the total.
 
 ## Known Bugs
 
