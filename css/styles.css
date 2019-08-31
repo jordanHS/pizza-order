@@ -2,10 +2,6 @@ h1 {
   text-align: center;
 }
 
-.form-two {
-  display: none;
-}
-
 body {
   background-color: #caedec
 }
@@ -13,4 +9,19 @@ body {
 p {
   font-size: 20px;
 text-align: center;
+}
+.well {
+  background-color: #e39ad1
+}
+
+#price-one {
+  display: none;
+}
+
+#price-two {
+  display: none;
+}
+
+#price-three {
+  display: none;
 }

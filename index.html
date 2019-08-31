@@ -8,9 +8,9 @@
     <title>Pietro's Pizza</title>
   </head>
   <body>
-    <div class="container">
-      <div class="well">
-        <h1>Welcome to Pietro's Pizza!</h1>
+      <div class="container">
+        <div class="well">
+          <h1>Welcome to Pietro's Pizza!</h1>
         </div>
         <p>Build your own pizza!</p>
       <div class="form-one">
@@ -35,14 +35,8 @@
             </label>
         </div>
       </form>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="extra-large">
-            Xtra Large
-          </label>
-        </div>
-        <button type="submit" class="btn btn-info">Next</button>
-        </div>
+      </div>
+
        <div class="form-two">
          <h2>Pick three toppings</h2>
          <form id="toppings">
@@ -56,12 +50,18 @@
              <input type="checkbox" name="topping" value="onion">Onion<br>
              <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
              <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
-            </div>
-
+           </div>
             <button type="submit" class="btn btn-success">Order!</button>
+            </div>
           </form>
-          <div id="pizza-cost">
-
+        <div id="price-one">
+          <p>Your pizza is $12!</p>
+        </div>
+        <div id="price-two">
+          <p>Your pizza is $14!</p>
+        </div>
+        <div id="price-three">
+          <p>Your pizza is $17!</p>
         </div>
     </div>
   </body>
