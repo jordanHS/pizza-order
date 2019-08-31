@@ -6,7 +6,7 @@ Beep Boop
 
 ## Description
 
-This forn should calculate the cost of pizza based on the size & number of toppings selected by the number.
+This forn should calculate the cost of pizza based on the size & number of toppings selected by the user.
 
 ## Setup/Installation requirements
 
