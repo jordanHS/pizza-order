@@ -4,15 +4,15 @@ function Pizza (size, toppings) {
 
 }
 
-Pizza.prototype.size = function() {
-  if (size = "small") {
-    return  "$10";
-  } else if (size = "medium") {
-    return  "$12";
-  } else if (size = "large") {
-    return  "$15";
-  }
-}
+// //Pizza.prototype.size = function() {
+//   if (this.size == "small") {
+//     return  "$10";
+//   } else if (this.size == "medium") {
+//     return  "$12";
+//   } else if (this.size == "large") {
+//     return  "$15";
+//   }
+// }
 
 Pizza.prototype.toppings = function() {
   if ("toppings".length = 1) {
@@ -34,18 +34,22 @@ Pizza.prototype.total = function() {
 
 $(document).ready(function() {
   $(".pizza").submit(function(event) {
-    $("#price-one").show();
-    $("#price-two").show();
-    $("#price-three").show();
+
     event.preventDefault();
-    var inputtedSize = $("input:radio[name=size]").val();
-    $("input:radio[name=size]").val("");
+    var inputtedSize = $("input:radio[name=size]:checked").val();
     console.log(inputtedSize);
     var inputtedToppings = [];
     $("input:checkbox[name=topping]:checked").each(function(){
-      var Toppings = $(this).val();
-      inputtedToppings.push(Toppings)
+      var toppings = $(this).val();
+      inputtedToppings.push(toppings)
     })
     var newPizza = new Pizza(inputtedSize, inputtedToppings);
+      if (newPizza.size == "small") {
+          $("#price-one").show();
+      } else if (newPizza.size == "medium") {
+        $("#price-two").show();
+      } else {
+        $("#price-three").show();
+      }
   });
 });
