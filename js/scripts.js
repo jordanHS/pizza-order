@@ -23,7 +23,7 @@ function Pizza (size, toppings) {
 // }
 
 Pizza.prototype.total = function() {
-  var value = this.topping + this.size;
+  var value = parseInt(this.size) + parseInt(this.toppings);
   return value
 
 
@@ -51,6 +51,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputtedSize, inputtedToppings.length);
 
 
-      $(".total").text("Your pizza costs $"  + newPizza.size + inputtedToppings.length + "!")
+      $(".total").text("Your pizza costs $"  + newPizza.total() + "!")
   });
 });
