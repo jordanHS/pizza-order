@@ -14,16 +14,19 @@ function Pizza (size, toppings) {
 //   }
 // }
 
-Pizza.prototype.toppings = function() {
-  if ("toppings".length = 1) {
-    return "$1";
-  }  else  if ("toppings".length = 2) {
-    return "$2";
-  }
-}
+// Pizza.prototype.toppings = function() {
+//   if ("toppings".length = 1) {
+//     return value;
+//   }  else  if ("toppings".length = 2) {
+//     return ";
+//   }
+// }
 
 Pizza.prototype.total = function() {
-  return this.size + 2;
+  var value = this.topping + this.size;
+  return value
+
+
 }
 
 
@@ -43,13 +46,11 @@ $(document).ready(function() {
       var toppings = $(this).val();
       inputtedToppings.push(toppings)
     })
-    var newPizza = new Pizza(inputtedSize, inputtedToppings);
-      if (newPizza.size == "small") {
-          $("#price-one").show();
-      } else if (newPizza.size == "medium") {
-        $("#price-two").show();
-      } else {
-        $("#price-three").show();
-      }
+
+    console.log(parseInt(inputtedToppings))
+    var newPizza = new Pizza(inputtedSize, inputtedToppings.length);
+
+
+      $(".total").text("Your pizza costs $"  + newPizza.size + inputtedToppings.length + "!")
   });
 });
